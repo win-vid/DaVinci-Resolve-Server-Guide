@@ -1,8 +1,9 @@
 # DaVinci Resolve Server Guide
 ## Requirements
 - VPN-Client like Sophos
-- Username and Password for the server
-- Newest Version of the DaVinci Resolve Software
+- Server VM with postgres installed, 4 GB RAM, min 50 GB of storage
+- postgres user with DB write permission 
+- Davinci resolve studio (all the editors need to have the newest software)
 
 ## Connecting to the Server
 ### 1. Connect to the VPN using your VPN-Client (e.g., Sophos).
@@ -13,10 +14,14 @@ Enter your credentials and your password plus the 2FA code:
 **PWD**: `<your_password>` + `<2FA_code>`
 
 ### 2. Open DaVinci Resolve Software and connect to the server.
-Once you have successfully connected to the VPN, open DaVinci Resolve. You should see an option to connect to a server. Use the credentials provided to connect to the DaVinci Resolve server.
+Once you have successfully connected to the VPN, open DaVinci Resolve. You should see an option to connect to an existing project or create a new one. Use the credentials provided to connect to the DaVinci Resolve server.
 
-## Managing Projects
-Projects are stored on the server, allowing multiple users to collaborate. To access a project, simply open it from the server within DaVinci Resolve. Make sure to save your work frequently to avoid any data loss.
+
+
+## Create and managing Projects
+Projects are stored on the server, allowing multiple users to collaborate. To access a project, simply open it from the server within DaVinci Resolve.
+If you create a new project, make sure you switch from `Single User Project` to `Multiple User Collaboration`.  
+Make sure to save your work frequently to avoid any data loss.
 
 ### File References
 **Most importantly, every user needs to ensure that they have the correct file paths set up for the project.** This is crucial for media management and project organization. If the file paths are not correctly set, you may encounter issues with missing media or project files.
